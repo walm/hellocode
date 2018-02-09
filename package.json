@@ -5,7 +5,10 @@
   "main": "index.js",
   "now": {
     "alias": "hellocode",
-    "public": false
+    "public": false,
+    "env": {
+      "MONGO_URL": "@mongo-url"
+    }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongoose": "^5.0.4"
   }
 }

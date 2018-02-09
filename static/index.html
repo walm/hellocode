@@ -14,15 +14,29 @@
     </header>
 
     <div id="content">
-
+      <p>
+      En kurs i programmering för fantasifulla barn från 8år <i>(el födda 2010)</i> och uppåt.
+      </p>
+      <p>
+      Just nu jobbar vår robot hårt med att få klart webbsidan med all information och anmälan, den har sagt att allt ska vara på plats den 12/2.<br>
+      Men robotar kan man inte alltid lita på, så det finns en möjlighet att skriva in din epost i rutan här under så meddelar vi dig så fort webbsidan och anmälan är igång.
+      </p>
+      <p>
+        <input type="text" placeholder="Din epost" id="email" v-model="email" v-on:keyup.enter="notify">
+        <div id="email_msg" v-bind:class="{ show: email }"><a href="#" v-on:click="notify">Tyck enter när du är klar</a></div>
+      </p>
     </div>
 
     <footer>
-      <div class="links">Vill du veta mer? <a href="mailto:andresas+hellocode@walm.net">Kontakta oss</a></div>
-      <div class="copy">Copyright © 2018 Wålm Network AB (publ). All rights reserved.</div>
+      <div class="links">Vill du veta mer? <a href="mailto:andreas+hellocode@walm.net">Kontakta oss</a></div>
+      <div class="copy">Copyright © 2018 Wålm Network AB. All rights reserved.</div>
     </footer>
 
 
+    <script
+           src="https://code.jquery.com/jquery-3.3.1.min.js"
+           integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+           crossorigin="anonymous"></script>
     <!-- DEV: <script src="https://unpkg.com/vue"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="./js/main.js"></script>
